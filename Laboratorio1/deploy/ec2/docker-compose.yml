@@ -1,0 +1,8 @@
+services:
+  nlp-api:
+    build:
+      context: ../..
+      dockerfile: deploy/ec2/Dockerfile
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
